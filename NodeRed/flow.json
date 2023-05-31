@@ -1,0 +1,209 @@
+[
+    {
+        "id": "347ee9d6e978bce0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9ba759e0d285d582",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-akx71lgvq1iy934x58gwgc80gmpgv1iqo3z42vgns2z:0473d16a449294bf9d58bde95dbacda1@bbd3c0ee-d0c8-455b-bbd3-8d6d996c2c0a-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Chave1105",
+        "useapikey": true
+    },
+    {
+        "id": "184e3ff11256815e",
+        "type": "http in",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "url": "quiz/txt",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "9e37c196f5bb1eec"
+            ]
+        ]
+    },
+    {
+        "id": "e92c7eda9357036d",
+        "type": "http response",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9e37c196f5bb1eec",
+        "type": "cloudantplus in",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "cloudant": "9ba759e0d285d582",
+        "database": "curiosamentetexto",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 490,
+        "y": 180,
+        "wires": [
+            [
+                "e92c7eda9357036d",
+                "334095493a17b9b8"
+            ]
+        ]
+    },
+    {
+        "id": "334095493a17b9b8",
+        "type": "debug",
+        "z": "347ee9d6e978bce0",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6e216d30e7c0d244",
+        "type": "http in",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "url": "quiz/geo",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "4fb9fff5fcc2ba3f"
+            ]
+        ]
+    },
+    {
+        "id": "c06b3b2ca12524ab",
+        "type": "http response",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4fb9fff5fcc2ba3f",
+        "type": "cloudantplus in",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "cloudant": "9ba759e0d285d582",
+        "database": "curiosamentegeografia",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 500,
+        "y": 360,
+        "wires": [
+            [
+                "c06b3b2ca12524ab",
+                "dcaab663319ed282"
+            ]
+        ]
+    },
+    {
+        "id": "dcaab663319ed282",
+        "type": "debug",
+        "z": "347ee9d6e978bce0",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b739f66e21a571b8",
+        "type": "http in",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "url": "quiz/math",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 260,
+        "y": 500,
+        "wires": [
+            [
+                "e65a6a566053863f"
+            ]
+        ]
+    },
+    {
+        "id": "dbb0af5ab52d89d8",
+        "type": "http response",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e65a6a566053863f",
+        "type": "cloudantplus in",
+        "z": "347ee9d6e978bce0",
+        "name": "",
+        "cloudant": "9ba759e0d285d582",
+        "database": "curiosamentematematica",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 510,
+        "y": 540,
+        "wires": [
+            [
+                "dbb0af5ab52d89d8",
+                "58ebb293c98d95ac"
+            ]
+        ]
+    },
+    {
+        "id": "58ebb293c98d95ac",
+        "type": "debug",
+        "z": "347ee9d6e978bce0",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 600,
+        "wires": []
+    }
+]
