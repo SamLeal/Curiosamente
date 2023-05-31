@@ -1,11 +1,7 @@
 # Curiosamente
 
 
-This repository contains a Swift app for conducting quizzes in the fields of geography, math, and text. The app provides an interactive platform for users to test their knowledge and improve their skills in these subjects.
-
-The app was developed for a swift course HackaTruck.
-
-It is currently not being developed because I no longer have acces to a plataform to develop in Swift, only had the oportunity to use a MacBook for a month.
+This repository contains a Swift app developed in Hackatruck MakerSpace, the app is focused on the children's audience, containing fun questions so that children can learn about various topics in a gamified way.
 
 ## Features
 
@@ -18,9 +14,10 @@ It is currently not being developed because I no longer have acces to a platafor
 ![App Screenshot 1](Imagens/appImages1.png)
 ![App Screenshot 2](Imagens/appImages2.png)
 
-## Agradecimentos aos meu Colegas de Grupo
 
+## Thanks to my team
+
+- André de Oliveira Brandão
 - David Dias Pinto
 - Leonardo Henrique S. de Avelar
 - Pedro Malta Boscatti
-- Samuel Marques Souza Leal
